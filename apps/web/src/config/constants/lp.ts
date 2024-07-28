@@ -1,0 +1,1 @@
+export const CAKE_BNB_LP_MAINNET = '0xc1f595579c46acfb33902db3d7cff34bd6355615'
