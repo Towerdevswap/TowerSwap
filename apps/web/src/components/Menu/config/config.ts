@@ -61,30 +61,11 @@ const config: (
           href: '/swap',
           supportChainIds: SUPPORT_ONLY_BSC,
         },
-        // {
-        //   label: t('Limit'),
-        //   href: '/limit-orders',
-        //   supportChainIds: SUPPORT_ONLY_BSC,
-        //   image: '/images/decorations/3d-coin.png',
-        // },
         {
           label: t('Liquidity'),
           href: '/liquidity',
           supportChainIds: SUPPORT_ONLY_BSC,
         },
-        // {
-        //   label: t('Perpetual'),
-        //   href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
-        //     isDark,
-        //   )}`,
-        //   supportChainIds: SUPPORT_ONLY_BSC,
-        //   type: DropdownMenuItemType.EXTERNAL_LINK,
-        // },
-        // {
-        //   label: t('Bridge'),
-        //   href: 'https://bridge.pancakeswap.finance/',
-        //   type: DropdownMenuItemType.EXTERNAL_LINK,
-        // },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -112,12 +93,17 @@ const config: (
       fillIcon: RocketIcon,
       showItemsOnMobile: false,
       type: DropdownMenuItemType.EXTERNAL_LINK,
-      // supportChainIds: SUPPORT_ONLY_BSC,
       items: [
-        // {
-        //   label: t('Launchpad List'),
-        //   href: '/Launchpad',
-        // },
+        {
+          label: t('TowerPad'),
+          href: 'https://towerpad.org',
+          type: DropdownMenuItemType.EXTERNAL_LINK,
+        },
+        {
+          label: t('PrivateSale'),
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSegAQJ-vF0yXo-KegrIEW_ujjUsJm0NKMdRdWK-9a1FftSxQw/viewform?usp=sf_link',
+          type: DropdownMenuItemType.EXTERNAL_LINK,
+        },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
